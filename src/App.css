@@ -1,28 +1,25 @@
-.App {
+.board {
+  height: 550px;
+  width: 35%;
   text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: rgba(29, 21, 21, 0.83);
+  border-style: solid;
+  border-color: #5858de;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive !important;
+  background-image: url(https://images.alphacoders.com/207/thumb-1920-207111.jpg);
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App{
+  text-align: center;
+  overflow: hidden;
+  min-width: 1300px;
 }
