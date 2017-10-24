@@ -31,7 +31,6 @@ export function validMove(move, player, gameBoard){
   }
 }
 
-
 export function winner(gameBoard, player){
   if(
     (gameBoard[0] === player && gameBoard[1] === player && gameBoard[2] === player) ||
@@ -43,6 +42,7 @@ export function winner(gameBoard, player){
     (gameBoard[0] === player && gameBoard[4] === player && gameBoard[8] === player) ||
     (gameBoard[2] === player && gameBoard[4] === player && gameBoard[6] === player)
   ){
+    console.log( gameBoard[0])
     return true;
   } else {
     return null;
