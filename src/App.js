@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Tile from './components/Tile'
-import Scores from './components/Scores'
-import FlashMessage from './components/FlashMessage'
+import Tile from './components/Tile';
+import Scores from './components/Scores';
+import FlashMessage from './components/FlashMessage';
 import {winningMessage, tieGame, copyBoard, validMove, winner} from './actions'
 
 class App extends Component {
@@ -117,12 +117,12 @@ aiMove(gameBoard){
         winner: player,
         playerOScore: this.state.playerOScore + 1,
         flashMessage: true
-      })
+      });
     }
 
     this.setState({
       gameBoard: currentBoard
-    })
+    });
   }
 
   resetBoard(){
@@ -137,7 +137,7 @@ aiMove(gameBoard){
       maxPlayer: "X",
       minPlayer: "O",
       flashMessage: false
-    })
+    });
   }
 
   render() {
